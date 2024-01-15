@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+<link rel="Stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<title>NETFLIX</title>
+  <link rel="icon" type="image/x-icon" href="/public/images/Net.ico">
+<style>
+body{
+    background:black;
+    max-width:96vw;
+    min-height:100vh;
+    display:grid;
+    overflow:visible;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+    header{
+        display: flex;
+        color: black;
+        flex-direction:row;
+        padding:10px;
+        align-items: baseline;
+        justify-content:space-between;
+        z-index:-1;
+        
+
+        
+    }
+    .N-logo{
+    
+        color: red;
+        font-family:Arial;
+        font-size:40px;
+        font-weight:bold;
+        
+        
+
+    }
+    .header-elements{
+        font-family:Arial;
+        font-size:20px;
+        color:white;
+    }
+    .header-elements-span{
+        margin-left:10px;
+    }
+    section{
+        /* margin-left:-10px; */
+        padding-bottom:30px; 
+        
+    }
+    .slides{
+        width:93%;
+        height: 100vh;
+        position: relative;
+        /* box-shadow:rgba(0,0,0,0.35) 0px 5px 15px; */
+    }
+    .slide{
+        position: absolute;
+        height:100%;
+        opacity:0;
+        inset:0;
+        z-index:-1;
+        animation: slide-show 12s infinite;
+    }
+    .slide-2{
+        animation-delay:4s;
+        z-index:-1;
+    }
+    .slide-3{
+        z-index:-1;
+        animation-delay: 8s;
+    }
+    .slide-4{
+        z-index:-1;
+        animation-delay: 12s;
+    }
+    .slide-5{
+        z-index:-1;
+        animation-delay: 16s;
+    }
+    .slide-6{
+        z-index:-1;
+        animation-delay: 20s;
+    }
+
+    .slide img{
+        width: 100vw;
+        height:100%;
+        object-fit:cover;
+        
+        z-index:-1;
+        /* margin-top:-100px; */
+    }
+
+    @keyframes slide-show{
+        0%{
+            opacity:0;
+
+        }
+        10%{
+            opacity:1;
+            
+        }
+        20%,30%{
+            opacity:1;
+            scale: 1.03;
+            
+        }
+        50%{
+            opacity:0;
+        }
+    }
+
+    
+    .card-title{
+        color:white;
+        font-weight:bold;
+        font-family:Arial;
+        font-size:20px;
+        margin-top:30px;
+    }
+    
+    .container{
+        max-width:100vw;
+        padding:20px;
+        display: flex;
+        flex-direction:row;
+        overflow: scroll;
+        white-space: nowrap;
+
+    }
+    .container::-webkit-scrollbar{
+        display:none;
+    }
+    
+    .card{
+        margin:0 10px;
+        transition:0.5s;
+        
+        /* shadow effect */
+    }
+    .card img{
+        display:block;
+        border-radius:5px;
+        padding:0px;
+        
+    }
+    .card:hover{
+        transform: scale(1.1);
+        z-index : 2;
+        border-style: solid;
+        border-color: white;
+    }
+
+    footer{
+        background-color:black;
+        color: white;
+        display:grid;
+        grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+        padding:30px;
+        margin-top:10px;
+        font-size:20px;
+        
+        
+    }   
+
+    .footer-elements{
+        
+        display:flex;
+        flex-direction:column;
+    }
+    .footer-elements~span{
+        margin:10px;
+    }
+    
+
+
+    
+</style>
+</head>
+<body>
+
+    
+    
+
+    <section>
+        <div class="slides">
+        
+            <div class="slide slide-1">
+                <img src="/public/images/mani.jpg" alt="">
+            </div>
+            <div class="slide slide-2">
+                <img src="/public/images/bbt.jpg" alt="">
+            </div>
+            <div class="slide slide-3">
+                <img src="/public/images/pb.jpg" alt="">
+            </div>
+            <div class="slide slide-4">
+                <img src="/public/images/st1.jpg" alt="">
+            </div>
+            <div class="slide slide-5">
+                <img src="/public/images/mh.jpg" alt="">
+            </div>
+            <div class="slide slide-6">
+                <img src="/public/images/.jpg" alt="">
+            </div>
+            <header>
+                <div>
+                    <span class="N-logo">NETFLIX</span>
+                </div>
+                <div class="header-elements">
+                    <span class="header-elements-span">Home</span>
+                    <span class="header-elements-span">TV Shows</span>
+                    <span class="header-elements-span">Movies</span>
+                    <span class="header-elements-span">Originals</span>
+                    <span class="header-elements-span">Recently Added</span>
+                    <span class="header-elements-span">Portfolio</span>
+
+                </div>
+                <div class="header-elements">
+                    <span class="bi bi-search"></span>
+                    <span class=" bi bi-bell"></span>
+                    <span>Account</span>
+                </div>
+             </header>
+        </div>    
+
+    <div class="card-title">NETFLIX ORIGINALS</div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/dark.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/st.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/wtte.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/dark.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/st.jpg" width=200px height=300px>
+            </div>
+            
+    </div>
+
+    <div class="card-title">TOP RATED </div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/tt.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/tmt.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/tt1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/sky.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/3.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/tt1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/sky.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/3.jpg" width=200px height=300px>
+            </div>
+            
+    </div>
+
+    <div class="card-title">ACTION MOVIES</div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/a2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/pathaan.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/jawan.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/rrr.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/a3.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/a2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/pathaan.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/jawan.jpg" width=200px height=300px>
+            </div>
+            
+    </div>
+
+    <div class="card-title">COMEDY MOVIES</div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/znmd.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/whag.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/go.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/friends.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/c1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/znmd.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/whag.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/go.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/friends.jpg" width=200px height=300px>
+            </div>
+            
+    </div>
+
+    <div class="card-title">DRAMA</div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/k3g.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/k2h2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/d1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/got.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/d2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/k3g.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/k2h2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/d1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/got.jpg" width=200px height=300px>
+            </div>
+           
+    </div>
+
+    <div class="card-title">HORROR MOVIES</div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/kahani.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/talash.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/h1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/h2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/h3.jpeg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/kahani.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/talash.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/h1.jpg" width=200px height=300px>
+            </div>
+
+    </div>
+
+    <div class="card-title">WATCH IT AGAIN</div>
+        <div class="container">
+            <div class="card">
+                <img src="/public/images/c2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W3.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W4.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/c2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W1.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W2.jpg" width=200px height=300px>
+            </div>
+            <div class="card">
+                <img src="/public/images/W3.jpg" width=200px height=300px>
+            </div>
+    </div>
+        
+    </section>
+
+    <footer>
+        <div>
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-instagram"></span>
+            <span class=" bi bi-youtube"></span>
+        </div>
+        <div class="footer-elements">
+           <span>Audio Description</span>
+           <span>Inverstor Relations</span>
+           <span>Legal Notices</span>
+        </div>
+        <div class="footer-elements">
+            <span>Help Centre</span>
+            <span>Jobs</span>
+            <span>Cookie Preferences</span>
+        </div>
+        <div class="footer-elements">
+            <span>Gift Cards</span>
+            <span>Terms of Use</span>
+            <span>Corporate Information</span>
+        </div>
+        <div class="footer-elements">
+            <span>Media Centre</span>
+            <span>Privacy</span>
+            <span>Contact Us</span>
+        </div>
+    </footer>
+    
+
+</body>
+</html>
